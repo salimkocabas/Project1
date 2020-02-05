@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.Test2.DashboradPageTest">
+        <methods>
+          <include name="openAndNavigate"/>
+          <include name="checkTimeSheet"/>
+          <include name="quitBrowser"/>
+          <include name="addTimeSheet"/>
+        </methods>
+      </class> <!-- com.Test2.DashboradPageTest -->
+      <class name="com.Test1.addEmployepageTest">
+        <methods>
+          <include name="goToAddPage"/>
+          <include name="deleteEmployee"/>
+          <include name="quitBrowser"/>
+          <include name="addEmployeeTest"/>
+        </methods>
+      </class> <!-- com.Test1.addEmployepageTest -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
